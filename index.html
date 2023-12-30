@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<!-- //aqui é a língua que o navegador irá identificar quando abrir esse index// -->
+<html lang="pt">
+
+    <head>
+
+        <meta charset="UTF-8" />
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!-- //aqui é onde fica o título do site// -->
+        <title>Tarefas diárias</title>
+        <!-- //aqui é onde será puxado todos os estilos, cores, animações e etc, com o index tendo o stylesheet linkado com o arquivo main.css// -->
+        <link rel="stylesheet" href="main.css"/>
+        <!-- //aqui nesse script é onde serão decididas quais ações o site pode ter ou como ele agirá com a ação de um user// -->
+        <script src="main.js"></script>
+
+    </head>
+
+    <!-- //aqui no body fica tudo que vemos no site a primeira vista// -->
+    <body>
+
+        <!-- essa div é um agrupamento de alguns elementos que podem ser modificados dentro dela e também pelo css ou js-->
+        <div>
+            <!-- h1 é um dos tipos de título disponíveis no html. dentro dele coloquei uma class, que nada mais é que uma classe do css que pode-se utilizar para modificar cor, estilo, fonte, borda, tamanho e isso tudo sem modificar os outros elementos do site -->
+            <h1 class="title">tarefas de hoje</h1>
+            <!-- uma id é uma identificação única, e nessa eu coloquei o nome de list, para depois conseguir configurar ela pelo java script. e a ul é uma forma de conseguir listar coisas no html. -->
+            <ul id="list"></ul>
+
+        </div>
+
+        <div>
+
+            <!-- input significa inserir, e ele vai ser usado para que o usuário, por meio do java script que eu vou configurar, consiga listar coisas no campo de "listar tarefas" -->
+            <input 
+            type="text" 
+            id="taskname" 
+            name="taskname"
+            placeholder="Nome da tarefa"
+             />
+             <!-- ainda falando do input, essa parte de placecholder serve para colocar qualquer coisa no campo de inserção vazio da lista -->
+            <button onclick="addnewtask()" class="add-task-button">Adicionar</button>
+            <!-- agora esse button, botão em inglês, vai servir pata que por meio do java script, o usuário adicione o que ele quiser em uma lista ao apertar no botão "adicionar"  -->
+
+        </div>
+
+    </body>
+
+</html>

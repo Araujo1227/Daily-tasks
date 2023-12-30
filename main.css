@@ -1,0 +1,43 @@
+body{
+    background-color: 	#363636;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    padding: 24px;
+} 
+/* aqui configurei tudo o que quero que apareça para o usuário de primeira */
+
+
+/* quando se tem um ".", quer dizer que uma nova class foi criada, e como ela não é do próprio pacote html, deve ser adicionada no lugar que será configurada */
+.title{ 
+      font-size: 48px;
+      color: springgreen;
+
+}
+
+.list-item{
+    margin-bottom: 24px;
+    font-size: 24px;
+}
+
+input{
+    height: 48px;
+    background-color: transparent;
+    color: white;
+    border-color: springgreen;
+    border-radius: 4px;
+    font-size: 24px;
+    padding: 12px;
+}
+/* background-color é tudo que tem em volta do campo de inserção que eu criei, e esse border-radius é o tanto que eu quero que minhas bordas fiquem redondas */
+
+.add-task-button{
+    font-size: 24px;
+    padding: 12px;
+    background-color: #228B22;
+    border-width: 0px;
+    border-radius: 4px;
+    color: white;
+    font-weight: bold;
+    font-family: monospace;
+}
+/*o padding define uma distancia entre os elementos dentro do meu campo de inserção/input e a sua borda  */
